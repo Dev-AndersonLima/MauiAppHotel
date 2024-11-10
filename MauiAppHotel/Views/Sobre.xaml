@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             BackgroundColor="#24221e"
+             NavigationPage.HasNavigationBar="True">
+
+    <VerticalStackLayout VerticalOptions="Center"
+                         HorizontalOptions="Center"
+                         Padding="20"
+                         Spacing="10">
+
+        <Label Text="Sobre este APP" 
+               FontSize="40"
+               HorizontalOptions="Center"
+               TextColor="#9b6615"
+               FontAttributes="Bold"
+               FontFamily="EduAUVICWANTPreVariableFontwght" />
+
+        <Label Text="Desenvolvido por Anderson Alves de Lima"
+               FontSize="18"
+               TextColor="#9b6615"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Ano de Desenvolvimento: 2024"
+               FontSize="18"
+               TextColor="#9b6615"
+               HorizontalOptions="Center"/>
+
+        <Label Text="Este aplicativo facilita a contratação de hospedagens de maneira simples e eficiente."
+               FontSize="16"
+               TextColor="#9b6615"
+               HorizontalTextAlignment="Center"
+               Padding="10"/>
+    </VerticalStackLayout>
+</ContentPage>
