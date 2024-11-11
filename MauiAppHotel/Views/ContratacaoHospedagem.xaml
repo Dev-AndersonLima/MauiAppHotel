@@ -12,7 +12,8 @@
         <Label Text="Cálculo da Diária" 
                FontFamily="EduAUVICWANTPreVariableFontwght"
                FontSize="50"
-               TextColor="#9b6615"/>
+               TextColor="#9b6615"
+                HorizontalTextAlignment="Center" />
 
         <Frame Padding="10">
             <VerticalStackLayout>
@@ -51,15 +52,18 @@
                 <Label Text="Escolaha sua Suíte" />
 
                 <Picker x:Name="pck_quarto"
-                        Title="Selecione sua Acomodação" />
+                        Title="Selecione sua Acomodação" 
+                        ItemDisplayBinding="{Binding Descricao}" />
 
                 <Frame Padding="10"
                        Margin="10">
                     <VerticalStackLayout>
                         <Label Text="Período da Estadia" />
+
                         <HorizontalStackLayout>
                             <Label Text="Check-in:" />
                             <DatePicker x:Name="dtpck_checkin"
+                                        DateSelected="dtpck_checkin_DateSelected"
                                         Format="dd/MM/yyyy" />
                         </HorizontalStackLayout>
                         
